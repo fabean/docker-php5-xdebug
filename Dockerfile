@@ -28,7 +28,6 @@ COPY php.ini /etc/php5/fpm/php.ini
 COPY remoteip.conf /etc/apache2/conf-enabled/remoteip.conf
 COPY confd /etc/confd/
 COPY apache2.conf /etc/apache2/apache2.conf
-COPY registry_rebuild /root/.drush/registry_rebuild
 
 # Copy in env-specific files
 COPY wwwsite.conf crons.conf start.sh load-configs.sh xdebug-php.ini /root/
